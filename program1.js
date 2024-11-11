@@ -24,7 +24,6 @@ const getTotalIsles = function (grid) {
   for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
           if (grid[r][c] === 'L') {
-              // Found an unvisited island
               dfs(r, c);
               islandCount += 1;
           }
