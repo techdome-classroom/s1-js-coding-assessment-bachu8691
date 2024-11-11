@@ -5,7 +5,6 @@ const getTotalIsles = function (grid) {
   const cols = grid[0].length;
   let islandCount = 0;
 
-  // Helper function to perform DFS
   const dfs = (r, c) => {
       if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 'W') {
           return;
