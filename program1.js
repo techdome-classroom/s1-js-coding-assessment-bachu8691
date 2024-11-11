@@ -14,11 +14,10 @@ const getTotalIsles = function (grid) {
       // Mark the cell as water to avoid re-visiting it
       grid[r][c] = 'W';
       
-      // Explore all four directions
-      dfs(r + 1, c); // down
-      dfs(r - 1, c); // up
-      dfs(r, c + 1); // right
-      dfs(r, c - 1); // left
+      dfs(r + 1, c); 
+      dfs(r - 1, c); 
+      dfs(r, c + 1); 
+      dfs(r, c - 1); 
   };
 
   for (let r = 0; r < rows; r++) {
