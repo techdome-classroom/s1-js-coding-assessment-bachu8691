@@ -11,7 +11,6 @@ const decodeTheRing = function (s, p) {
       }
   }
 
-  // Fill the DP table
   for (let i = 1; i <= m; i++) {
       for (let j = 1; j <= n; j++) {
           if (p[j - 1] === '*') {
