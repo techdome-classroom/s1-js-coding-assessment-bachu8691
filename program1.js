@@ -11,7 +11,6 @@ const getTotalIsles = function (grid) {
           return;
       }
       
-      // Mark the cell as water to avoid re-visiting it
       grid[r][c] = 'W';
       
       dfs(r + 1, c); 
