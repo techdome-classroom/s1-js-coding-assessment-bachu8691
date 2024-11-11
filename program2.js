@@ -3,7 +3,6 @@ const decodeTheRing = function (s, p) {
   const n = p.length;
   const dp = Array(m + 1).fill(false).map(() => Array(n + 1).fill(false));
 
-  // Base case: empty pattern matches empty string
   dp[0][0] = true;
 
   // Fill the first row for cases where pattern starts with '*'
